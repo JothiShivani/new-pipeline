@@ -14,7 +14,7 @@ pipeline {
         }
           stage('Verify Files') {
             steps {
-                sh 'ls -al'  // This will list the files in the current directory
+                bat 'ls -al'  // This will list the files in the current directory
             }
         }
 
