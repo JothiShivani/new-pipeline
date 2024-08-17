@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/JothiShivani/new-pipeline.git'  // Replace with your Git repo URL
+                git branch :'master', url :'https://github.com/JothiShivani/new-pipeline.git'  // Replace with your Git repo URL
             }
         }
 
