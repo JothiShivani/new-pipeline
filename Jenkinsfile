@@ -12,6 +12,11 @@ pipeline {
                 git branch :'master', url :'https://github.com/JothiShivani/new-pipeline.git'  // Replace with your Git repo URL
             }
         }
+          stage('Verify Files') {
+            steps {
+                sh 'ls -al'  // This will list the files in the current directory
+            }
+        }
 
         stage('Terraform Init') {
             steps {
