@@ -20,19 +20,19 @@ pipeline {
 
         stage('Terraform Init') {
             steps {
-                bat 'C:\\Users\\mathanj\\Downloads\\terraform_1.9.4_windows_386\\terraform init'
+                bat 'C:\\Users\\mathanj\\terraform\\terraform init'
             }
         }
 
         stage('Terraform Plan') {
             steps {
-                bat 'C:\\Users\\mathanj\\Downloads\\terraform_1.9.4_windows_386\\terraform plan'
+                bat 'C:\\Users\\mathanj\\terraform\\terraform plan'
             }
         }
 
         stage('Terraform Apply') {
             steps {
-                bat 'C:\\Users\\mathanj\\Downloads\\terraform_1.9.4_windows_386\\terraform apply -auto-approve'
+                bat 'C:\\Users\\mathanj\\terraform\\terraform apply -auto-approve'
             }
         }
     }
